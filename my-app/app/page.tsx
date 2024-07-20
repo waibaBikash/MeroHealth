@@ -13,7 +13,6 @@ export default function Home() {
                width={1000}
                alt='patient'
                className='mb-12 h-10 w-fit'
-
              />
              <PatientFrom />
               <div className='text-14-regular mt-20 flex justify-between'>
