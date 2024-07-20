@@ -25,7 +25,6 @@ const PatientFrom =()=> {
     // ✅ This will be type-safe and validated.
     console.log(values)
   }
-
   return (
     <div>
 
