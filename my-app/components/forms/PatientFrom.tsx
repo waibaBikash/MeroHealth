@@ -31,5 +31,4 @@ const PatientFrom =()=> {
     </div>
   )
 }
-
 export default PatientFrom;
