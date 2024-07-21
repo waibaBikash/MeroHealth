@@ -26,7 +26,7 @@ interface CustomProps {
   children?: React.ReactNode,
   renderSkeleton?: (field: any)=> React.ReactNode
 }
-const RenderInput = () => {
+const RenderField = () => {
   return(
     <Input 
     type="text"
@@ -35,7 +35,7 @@ const RenderInput = () => {
   )
 }
 
-const CustomFormField = ({control, fieldType, name, label}: CustomProps) => {
+const CustomFormField = ({control, fieldType, name, label }: CustomProps) => {
   return (
     <FormField
     control={control}
@@ -45,6 +45,8 @@ const CustomFormField = ({control, fieldType, name, label}: CustomProps) => {
         {fieldType !== FormFieldTye.CHECKBOX && label && (
           <FormLabel>{label}</FormLabel>
         )}
+
+        <RenderField />
 
       </FormItem>
     )}
