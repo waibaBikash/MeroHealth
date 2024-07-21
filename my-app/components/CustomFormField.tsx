@@ -26,6 +26,14 @@ interface CustomProps {
   children?: React.ReactNode,
   renderSkeleton?: (field: any)=> React.ReactNode
 }
+const RenderInput = () => {
+  return(
+    <Input 
+    type="text"
+    placeholder="Arya Waiba"
+    />
+  )
+}
 
 const CustomFormField = ({control, fieldType, name, label}: CustomProps) => {
   return (
