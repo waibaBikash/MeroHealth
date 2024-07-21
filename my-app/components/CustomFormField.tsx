@@ -8,11 +8,17 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Input } from '@/components/ui/input';
+import { Control } from "react-hook-form";
 
-const CustomFormField = () => {
+interface CustomProps {
+  control: Control<any>,
+}
+
+const CustomFormField = ({control}: CustomProps) => {
   return (
     <FormField
-    control={form.control}
+    control={control}
     name="username"
     render={({ field }) => (
       <FormItem>
@@ -27,6 +33,6 @@ const CustomFormField = () => {
       </FormItem>
     )}
   />
-}
+)}
 
 export default CustomFormField;
