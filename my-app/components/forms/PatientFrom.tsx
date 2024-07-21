@@ -7,6 +7,16 @@ import { z } from "zod"
 import { Button } from "@/components/ui/button"
 import { Form } from "@/components/ui/form";
 import CustomFormField from "../CustomFormField"
+
+export enum FormFieldTye {
+  INPUT = 'input'
+  TEXTAREA = 'textarea'
+  PHONE_INPUT = 'phoneInput'
+  CHECKBOX = 'checkbox'
+  DATE_PICKER = 'dataPicker'
+  SELECT = 'select'
+  SKELETON = 'skeleton'
+}
  
  
 const formSchema = z.object({
@@ -39,7 +49,13 @@ const PatientFrom =()=> {
          </section>
        
          <CustomFormField 
+         fieldType = {FormFieldTye.INPUT}
           control={form.control}
+          name='name'
+          lable='Full name'
+          placeholder='Arya Waiba'
+          iconScr='/assests/icons/user.svg'
+          iconAlt='user'
          />
         <Button type="submit">Submit</Button>
       </form>
