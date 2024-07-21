@@ -57,6 +57,25 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
          />
+
+       <CustomFormField 
+         fieldType = {FormFieldTye.INPUT}
+          control={form.control}
+          name='email'
+          label='Email'
+          placeholder='aaryanta@gmail.com'
+          iconSrc='/assets/icons/email.svg'
+          iconAlt='email'
+         />
+
+         <CustomFormField 
+         fieldType = {FormFieldTye.PHONE_INPUT}
+          control={form.control}
+          name='phone'
+          label='Phone number'
+          placeholder='(+61) 123-4567'
+         />
+
         <Button type="submit">Submit</Button>
       </form>
     </Form>
