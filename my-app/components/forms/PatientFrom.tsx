@@ -52,7 +52,7 @@ const PatientFrom =()=> {
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
           name='name'
-          label='Full name'
+          label='Full Name'
           placeholder='Arya Waiba'
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
