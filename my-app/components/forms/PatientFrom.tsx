@@ -9,12 +9,12 @@ import { Form } from "@/components/ui/form";
 import CustomFormField from "../CustomFormField"
 
 export enum FormFieldTye {
-  INPUT = 'input'
-  TEXTAREA = 'textarea'
-  PHONE_INPUT = 'phoneInput'
-  CHECKBOX = 'checkbox'
-  DATE_PICKER = 'dataPicker'
-  SELECT = 'select'
+  INPUT = 'input',
+  TEXTAREA = 'textarea',
+  PHONE_INPUT = 'phoneInput',
+  CHECKBOX = 'checkbox',
+  DATE_PICKER = 'dataPicker',
+  SELECT = 'select',
   SKELETON = 'skeleton'
 }
  
