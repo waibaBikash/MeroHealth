@@ -72,7 +72,7 @@ const PatientFrom =()=> {
          fieldType = {FormFieldTye.PHONE_INPUT}
           control={form.control}
           name='phone'
-          label='Phone number'
+          label='Phone'
           placeholder='(+61) 123-4567'
          />
 
