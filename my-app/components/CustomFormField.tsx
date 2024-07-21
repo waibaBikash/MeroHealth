@@ -15,16 +15,26 @@ import { FormFieldTye } from "./forms/PatientFrom";
 interface CustomProps {
   control: Control<any>,
   fieldType: FormFieldTye
+  name: string,
+  label?: string,
+  placeholder?: string,
+  iconSrc?: string,
+  iconAlt?: string
+  disabled?: boolean,
+  dateFormat?: string,
+  showTimeSelect?: boolean,
+  children?: React.ReactNode,
+  renderSkeleton?: (field: any)=> React.ReactNode
 }
 
-const CustomFormField = ({control, fieldType, name}: CustomProps) => {
+const CustomFormField = ({control, fieldType, name, label}: CustomProps) => {
   return (
     <FormField
     control={control}
     name="name"
     render={({ field }) => (
       <FormItem className="flex-1">
-        {fieldType !== FormFieldTye.CHECKBOX && label (
+        {fieldType !== FormFieldTye.CHECKBOX && label && (
           <FormLabel>{label}</FormLabel>
         )}
 
