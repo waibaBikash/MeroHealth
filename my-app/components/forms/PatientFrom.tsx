@@ -52,7 +52,7 @@ const PatientFrom =()=> {
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
           name='name'
-          label='Full name'
+          label='Full Name'
           placeholder='Arya Waiba'
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
@@ -72,7 +72,7 @@ const PatientFrom =()=> {
          fieldType = {FormFieldTye.PHONE_INPUT}
           control={form.control}
           name='phone'
-          label='Phone'
+          label='Phone Number'
           placeholder='(+61) 123-4567'
          />
 
