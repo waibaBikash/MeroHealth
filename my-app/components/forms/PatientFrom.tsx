@@ -13,7 +13,7 @@ export enum FormFieldTye {
   TEXTAREA = 'textarea',
   PHONE_INPUT = 'phoneInput',
   CHECKBOX = 'checkbox',
-  DATE_PICKER = 'dataPicker',
+  DATE_PICKER = 'datePicker',
   SELECT = 'select',
   SKELETON = 'skeleton'
 }
