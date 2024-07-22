@@ -7,6 +7,7 @@ import { z } from "zod"
 import { Button } from "@/components/ui/button"
 import { Form } from "@/components/ui/form";
 import CustomFormField from "../CustomFormField"
+import SubmitButton from "../SubmitButton"
 
 export enum FormFieldTye {
   INPUT = 'input',
@@ -76,7 +77,7 @@ const PatientFrom =()=> {
           placeholder='(+61) 123-4567'
          />
 
-        <Button type="submit">Submit</Button>
+        <SubmitButton />
       </form>
     </Form>
   )
