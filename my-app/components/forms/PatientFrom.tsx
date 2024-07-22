@@ -77,7 +77,6 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/email.svg'
           iconAlt='email'
          />
-
          <CustomFormField 
          fieldType = {FormFieldTye.PHONE_INPUT}
           control={form.control}
