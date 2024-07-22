@@ -67,7 +67,6 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
          />
-
        <CustomFormField 
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
