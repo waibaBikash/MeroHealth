@@ -77,7 +77,7 @@ const PatientFrom =()=> {
           placeholder='(+61) 123-4567'
          />
 
-        <SubmitButton />
+        <SubmitButton isLoading={isLoading} />
       </form>
     </Form>
   )
