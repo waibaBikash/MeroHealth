@@ -17,7 +17,7 @@ import PhoneInput from "react-phone-number-input";
 
 interface CustomProps {
   control: Control<any>,
-  fieldType: FormFieldTye
+  fieldType: FormFieldTye,
   name: string,
   label?: string,
   placeholder?: string,
