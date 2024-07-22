@@ -7,7 +7,6 @@ interface ButtonProps {
   className?: string,
   children: React.ReactNode,
 }
-
 const SubmitButton = ({isLoading, className, children }: ButtonProps) => {
   return (
     <Button type="submit" disabled={isLoading} className={className ?? 'shad-primay-btn w-full'} >
