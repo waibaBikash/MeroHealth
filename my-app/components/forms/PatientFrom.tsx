@@ -20,7 +20,6 @@ export enum FormFieldTye {
   SELECT = 'select',
   SKELETON = 'skeleton'
 }
- 
 
 const PatientFrom =()=> {
   const router =useRouter();
