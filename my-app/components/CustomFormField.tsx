@@ -85,7 +85,6 @@ const CustomFormField = (props: CustomProps) => {
         {fieldType !== FormFieldTye.CHECKBOX && label && (
           <FormLabel>{label}</FormLabel>
         )}
-
         <RenderField field={field} props={props} />
 
       <FormMessage className="shad-error" />
