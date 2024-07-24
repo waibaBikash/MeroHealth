@@ -34,16 +34,16 @@ interface CustomProps {
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
   const { fieldType, iconSrc, iconAlt, placeholder } = props;
 
-  switch (props.fieldType) {
+  switch (fieldType) {
     case FormFieldTye.INPUT:
       return(
         <div className="flex rounded-md border border-dark-500 bg-dark-400">
-            {props.iconSrc && (
+            {iconSrc && (
               <Image 
-              src={props.iconSrc}
+              src={iconSrc}
               height={24}
               width={24}
-              alt="iconAlt || 'icon"
+              alt={iconAlt || 'icon'}
               className="ml-2"
               />
             )}

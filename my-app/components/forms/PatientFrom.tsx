@@ -57,6 +57,7 @@ const PatientFrom =()=> {
             <h1 className="header">Hi there 👋</h1>
             <p className="text-dark-700">Schedule your first appointment.</p>
          </section>
+
          <CustomFormField 
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
@@ -66,6 +67,7 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
          />
+
        <CustomFormField 
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
@@ -75,6 +77,7 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/email.svg'
           iconAlt='email'
          />
+         
          <CustomFormField 
          fieldType = {FormFieldTye.PHONE_INPUT}
           control={form.control}
