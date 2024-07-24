@@ -77,7 +77,7 @@ const PatientFrom =()=> {
           iconSrc='/assets/icons/email.svg'
           iconAlt='email'
          />
-         
+
          <CustomFormField 
          fieldType = {FormFieldTye.PHONE_INPUT}
           control={form.control}
@@ -85,6 +85,7 @@ const PatientFrom =()=> {
           label='Phone Number'
           placeholder='(+61) 123-4567'
          />
+         
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
     </Form>
