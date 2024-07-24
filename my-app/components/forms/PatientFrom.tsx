@@ -23,7 +23,7 @@ export enum FormFieldTye {
 }
 
 const PatientFrom = () => {
-  const router =useRouter();
+  const router = useRouter();
   // 1. Define your form.
   const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof UserFormValidation>>({
