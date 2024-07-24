@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   title: "MeroHealth",
   description: "A healthcare management system",
 };
-
 export default function RootLayout({
   children,
 }:Readonly<{
