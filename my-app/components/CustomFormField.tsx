@@ -27,7 +27,7 @@ interface CustomProps {
   dateFormat?: string,
   showTimeSelect?: boolean,
   children?: React.ReactNode,
-  renderSkeleton?: (field: any)=> React.ReactNode
+  renderSkeleton?: (field: any)=> React.ReactNode,
   
 }
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
@@ -84,7 +84,7 @@ const CustomFormField = (props: CustomProps) => {
         {fieldType !== FormFieldTye.CHECKBOX && label && (
           <FormLabel>{label}</FormLabel>
         )}
-        
+
         <RenderField field={field} props={props} />
 
       <FormMessage className="shad-error" />
