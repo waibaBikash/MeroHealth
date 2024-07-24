@@ -30,6 +30,7 @@ interface CustomProps {
   renderSkeleton?: (field: any)=> React.ReactNode,
   
 }
+
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
   const { fieldType, iconSrc, iconAlt, placeholder} = props;
 
