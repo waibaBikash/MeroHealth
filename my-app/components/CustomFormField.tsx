@@ -63,7 +63,7 @@ interface CustomProps {
             placeholder={placeholder}
             international
             withCountryCallingCode
-            value={field.value as E164Number | undefined}
+            value={field.value as 'E164Number' | undefined}
             onChange={field.onChange}
             className="input-phone"
            />
@@ -73,7 +73,6 @@ interface CustomProps {
       break;
   }
 }
-
 const CustomFormField = (props: CustomProps) => {
   const { control, fieldType, name, label } = props;
   return (
