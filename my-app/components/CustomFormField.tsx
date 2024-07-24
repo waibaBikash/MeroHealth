@@ -30,7 +30,7 @@ interface CustomProps {
   renderSkeleton?: (field: any)=> React.ReactNode
   
 }
-  const RenderField = ({field, props}: {field:any; props: CustomProps}) => {
+  const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
   const { fieldType, iconSrc, iconAlt, placeholder} = props;
 
   switch (props.fieldType) {
@@ -63,7 +63,7 @@ interface CustomProps {
             placeholder={placeholder}
             international
             withCountryCallingCode
-            value={field.value as 'E164Number' | undefined}
+            value={field.value as E164Number | undefined}
             onChange={field.onChange}
             className="input-phone"
            />
@@ -79,7 +79,7 @@ const CustomFormField = (props: CustomProps) => {
   return (
     <FormField
     control={control}
-    name="name"
+    name={name}
     render={({ field }) => (
       <FormItem className="flex-1">
         {fieldType !== FormFieldTye.CHECKBOX && label && (
