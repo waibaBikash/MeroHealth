@@ -22,7 +22,7 @@ export enum FormFieldTye {
   SKELETON = 'skeleton'
 }
 
-const PatientFrom =()=> {
+const PatientFrom = () => {
   const router =useRouter();
   // 1. Define your form.
   const [isLoading, setIsLoading] = useState(false);
