@@ -66,6 +66,26 @@ const RegisterForm = ({ user }: { user: User }) => {
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
          />
+         <div className="flex flex-col gap-6 xl:flex-row">
+         <CustomFormField 
+         fieldType = {FormFieldTye.INPUT}
+          control={form.control}
+          name='email'
+          label='Email'
+          placeholder='aaryanta@gmail.com'
+          iconSrc='/assets/icons/email.svg'
+          iconAlt='email'
+         />
+
+         <CustomFormField 
+         fieldType = {FormFieldTye.PHONE_INPUT}
+          control={form.control}
+          name='phone'
+          label='Phone Number'
+          placeholder='(555) 123-4567'
+         />
+
+         </div>
 
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
