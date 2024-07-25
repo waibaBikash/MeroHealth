@@ -62,7 +62,6 @@ const RegisterForm = ({ user }: { user: User }) => {
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
           name='name'
-          label='Full Name'
           placeholder='Arya Waiba'
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
