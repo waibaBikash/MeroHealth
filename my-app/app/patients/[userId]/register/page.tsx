@@ -4,6 +4,8 @@ import Link from 'next/link';
 import React from 'react'
 
 const Register = () => {
+
+  
   return (
     <div className='flex h-screen max-h-screen'>
        <section className='remove-scrollbar container'>
