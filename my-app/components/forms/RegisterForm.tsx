@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import { createUser } from "@/lib/actions/patient.actions"
 import { FormFieldTye } from "./PatientFrom"
 import { RadioGroup } from "../ui/radio-group";
+import { GenderOptions } from "@/constants";
 
 
 const RegisterForm = ({ user }: { user: User }) => {
@@ -87,7 +88,7 @@ const RegisterForm = ({ user }: { user: User }) => {
           renderSkeleton={(field) => (
             <FormControl>
              <RadioGroup className="flex h-11 xl:justify-between" onValueChange={field.onChange} defaultValue={field.value}>
-
+              {GenderOptions}
              </RadioGroup>
             </FormControl>
             )}
