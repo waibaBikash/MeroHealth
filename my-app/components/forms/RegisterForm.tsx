@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import { Form } from "@/components/ui/form";
+import { Form, FormControl } from "@/components/ui/form";
 import CustomFormField from "../CustomFormField"
 import SubmitButton from "../SubmitButton"
 import { useState } from "react"
@@ -69,22 +69,29 @@ const RegisterForm = ({ user }: { user: User }) => {
          />
          <div className="flex flex-col gap-6 xl:flex-row">
          <CustomFormField 
-         fieldType = {FormFieldTye.INPUT}
+         fieldType = {FormFieldTye.DATE_PICKER}
           control={form.control}
-          name='email'
-          label='Email'
+          name='birthDate'
+          label='Date of Birth'
           placeholder='aaryanta@gmail.com'
           iconSrc='/assets/icons/email.svg'
           iconAlt='email'
          />
 
          <CustomFormField 
-         fieldType = {FormFieldTye.PHONE_INPUT}
+         fieldType = {FormFieldTye.SKELETON}
           control={form.control}
-          name='phone'
-          label='Phone Number'
-          placeholder='(555) 123-4567'
+          name='gender'
+          label='Gender'
+          renderSkeleton={(field) => (
+            <FormControl>
+
+            </FormControl>
+            )}
          />
+
+         </div>
+         <div className="flex flex-col gap-6 xl:flex-row">
 
          </div>
 
