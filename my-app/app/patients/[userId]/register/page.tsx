@@ -44,7 +44,6 @@ const Register = async ({params: {userId}}: SearchParamProps) => {
        />
     </div>
        </section>
-
     </div>
   )
 }
