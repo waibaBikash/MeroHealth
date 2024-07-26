@@ -32,6 +32,7 @@ interface CustomProps {
 }
 
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
+    
   const { fieldType, iconSrc, iconAlt, placeholder } = props;
 
   switch (fieldType) {
@@ -56,7 +57,7 @@ interface CustomProps {
             </FormControl>
         </div>
       )
-      
+
     case FormFieldTye.PHONE_INPUT:
       return(
          <FormControl>
