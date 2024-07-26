@@ -91,4 +91,5 @@ const PatientFrom = () => {
     </Form>
   )
 }
+
 export default PatientFrom;
