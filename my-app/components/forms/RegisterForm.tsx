@@ -112,4 +112,5 @@ const RegisterForm = ({ user }: { user: User }) => {
     </Form>
   )
 }
+
 export default RegisterForm;
