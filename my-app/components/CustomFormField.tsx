@@ -56,6 +56,7 @@ interface CustomProps {
             </FormControl>
         </div>
       )
+      
     case FormFieldTye.PHONE_INPUT:
       return(
          <FormControl>
@@ -70,7 +71,7 @@ interface CustomProps {
            />
          </FormControl>
       )
-      
+
     default:
       break;
   }
