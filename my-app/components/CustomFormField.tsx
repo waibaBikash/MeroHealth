@@ -32,7 +32,6 @@ interface CustomProps {
 }
 
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
-    
   const { fieldType, iconSrc, iconAlt, placeholder } = props;
 
   switch (fieldType) {
@@ -57,7 +56,6 @@ interface CustomProps {
             </FormControl>
         </div>
       )
-
     case FormFieldTye.PHONE_INPUT:
       return(
          <FormControl>
@@ -72,7 +70,18 @@ interface CustomProps {
            />
          </FormControl>
       )
-
+      case FormFieldTye.DATE_PICKER:
+        return(
+          <div className="flex rounded-md border border-dark-500 bg-dark-400">
+           <Image 
+            src='/assets/icons/calender.svg'
+            height={24}
+            width={24}
+            alt="calender"
+            className="ml-2"
+           />
+          </div>
+        )
     default:
       break;
   }
