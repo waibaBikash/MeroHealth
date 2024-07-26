@@ -26,4 +26,5 @@ const SubmitButton = ({ isLoading, className, children }: ButtonProps) => {
     </Button>
   )
 }
+
 export default SubmitButton;
