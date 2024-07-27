@@ -114,7 +114,6 @@ const RegisterForm = ({ user }: { user: User }) => {
          <div className="flex flex-col gap-6 xl:flex-row">
          </div>
 
-
          <CustomFormField 
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
