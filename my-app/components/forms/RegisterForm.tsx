@@ -114,6 +114,24 @@ const RegisterForm = ({ user }: { user: User }) => {
          <div className="flex flex-col gap-6 xl:flex-row">
          </div>
 
+
+         <CustomFormField 
+         fieldType = {FormFieldTye.INPUT}
+          control={form.control}
+          name='address'
+          label="Address"
+          placeholder='99 Kensington Rd, Australia'
+         /> 
+
+         <CustomFormField 
+         fieldType = {FormFieldTye.INPUT}
+          control={form.control}
+          name='occupation'
+          label="Occupation"
+          placeholder='Software Engineer'
+        
+         />
+
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
     </Form>
