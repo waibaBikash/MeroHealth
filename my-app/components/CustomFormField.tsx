@@ -50,7 +50,7 @@ interface CustomProps {
               className="ml-2"
               />
             )}
-            
+
             <FormControl>
                <Input
                placeholder={placeholder}
@@ -89,6 +89,8 @@ interface CustomProps {
                selected={field.value}
                onChange={(date) => field.onChange(date)}
                dateFormat={dateFormat ?? 'MM/dd/yyyy'}
+               showTimeSelect={showTimeSelect ?? false}
+               timeInputLabel="Time"
                />
             </FormControl>
           </div>
