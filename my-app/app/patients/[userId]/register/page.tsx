@@ -42,8 +42,8 @@ const Register = async ({params: {userId}}: SearchParamProps) => {
          alt='patient'
          className='side-img max-w-[390px]'
        />
-    </div>
-       </section>
+      </div>
+     </section>
     </div>
   )
 }
