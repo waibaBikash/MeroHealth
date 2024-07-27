@@ -71,6 +71,7 @@ const RegisterForm = ({ user }: { user: User }) => {
           iconSrc='/assets/icons/user.svg'
           iconAlt='user'
          />
+         
          <div className="flex flex-col gap-6 xl:flex-row">
          <CustomFormField 
          fieldType = {FormFieldTye.DATE_PICKER}
