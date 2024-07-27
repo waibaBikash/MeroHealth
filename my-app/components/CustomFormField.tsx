@@ -35,7 +35,7 @@ interface CustomProps {
 }
 
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
-  const { fieldType, iconSrc, iconAlt, placeholder, showTimeSelect, dateFormat } = props;
+  const { fieldType, iconSrc, iconAlt, placeholder, showTimeSelect, dateFormat, renderSkeleton } = props;
 
   switch (fieldType) {
     case FormFieldTye.INPUT:
@@ -95,6 +95,11 @@ interface CustomProps {
             </FormControl>
           </div>
         )
+        case FormFieldTye.SKELETON:
+          return(
+            renderSkeleton ? renderSkeleton(field)
+             : null
+          )
     default:
       break;
   }
