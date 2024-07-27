@@ -31,7 +31,6 @@ interface CustomProps {
   showTimeSelect?: boolean,
   children?: React.ReactNode,
   renderSkeleton?: (field: any)=> React.ReactNode,
-  
 }
 
   const RenderField = ({field, props}: {field: any; props:CustomProps}) => {
@@ -105,7 +104,7 @@ interface CustomProps {
   }
 }
 const CustomFormField = (props: CustomProps) => {
-  
+
   const { control, fieldType, name, label } = props;
   return (
     <FormField
