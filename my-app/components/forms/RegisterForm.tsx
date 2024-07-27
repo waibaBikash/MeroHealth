@@ -128,7 +128,6 @@ const RegisterForm = ({ user }: { user: User }) => {
           name='occupation'
           label="Occupation"
           placeholder='Software Engineer'
-        
          />
 
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
