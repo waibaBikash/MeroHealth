@@ -102,7 +102,6 @@ const RegisterForm = ({ user }: { user: User }) => {
             </FormControl>
             )}
          />
-
          </div>
          <div className="flex flex-col gap-6 xl:flex-row">
          </div>
