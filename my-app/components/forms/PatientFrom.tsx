@@ -34,7 +34,6 @@ const PatientFrom = () => {
       phone: "",
     },
   })
- 
   // 2. Define a submit handler.
    async function onSubmit({name, email, phone}: z.infer<typeof UserFormValidation>) {
     // Do something with the form values.
