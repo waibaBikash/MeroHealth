@@ -60,7 +60,6 @@ export const formatDateTime = (dateString: Date | string) => {
     "en-US",
     timeOptions
   );
-
   return {
     dateTime: formattedDateTime,
     dateDay: formattedDateDay,
