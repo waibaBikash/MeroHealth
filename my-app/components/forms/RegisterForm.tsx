@@ -62,7 +62,6 @@ const RegisterForm = ({ user }: { user: User }) => {
             <h2 className="sub-header">Personal Information</h2>
          </section>
 
-
          <CustomFormField 
          fieldType = {FormFieldTye.INPUT}
           control={form.control}
