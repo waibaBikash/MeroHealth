@@ -16,6 +16,7 @@ import { GenderOptions } from "@/constants";
 import { Label } from "../ui/label";
 
 
+
 const RegisterForm = ({ user }: { user: User }) => {
   const router = useRouter();
   // 1. Define your form.
