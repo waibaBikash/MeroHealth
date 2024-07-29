@@ -83,7 +83,6 @@ const PatientFrom = () => {
           label='Phone Number'
           placeholder='(555) 123-4567'
          />
-
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
     </Form>
