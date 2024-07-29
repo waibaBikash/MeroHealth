@@ -68,7 +68,6 @@ export const formatDateTime = (dateString: Date | string) => {
     timeOnly: formattedTime,
   };
 };
-
 export function encryptKey(passkey: string) {
   return btoa(passkey);
 }
