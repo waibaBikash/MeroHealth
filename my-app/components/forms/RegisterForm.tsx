@@ -63,7 +63,6 @@ const RegisterForm = ({ user }: { user: User }) => {
          </section>
          <section className="space-y-6">
            <div className="mb-9 space-y-1">
-
            </div>
             <h2 className="sub-header">Personal Information</h2>
          </section>
