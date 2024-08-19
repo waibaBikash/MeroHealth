@@ -141,7 +141,9 @@ const RegisterForm = ({ user }: { user: User }) => {
           placeholder='Software Engineer'
          />
 
-        <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
+        <SubmitButton 
+          isLoading={isLoading}>Get Started
+        </SubmitButton>
       </form>
     </Form>
   )
